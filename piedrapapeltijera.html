@@ -1,15 +1,48 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8"/>
-	<title>Mi primera programada</title>
-	<script>
-		let nombre = ""
-		nombre = prompt("Cual es tu nombre?")
-		alert("Bienvenido " + nombre)
-	</script>
-</head>
-<body>
-	<h1>Primer intento de website</h1>
-	<p>Este es nuestro primer programa completo y profesional</p>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Piedra, papel o tijera</title>
+		<script>
+			// 1 es piedra, 2 es tijera, 3 es tijera
+			let jugador = 0
+			let pc = 2
+			jugador = prompt("Elije: 1 para piedra, 2 para papel, 3 para tijera: ")
+			//alert("Elegiste " + jugador)
+			if(jugador == 1) {
+				alert("Elegiste Piedra  🪨🪨🪨")
+			}else if (jugador == 2) {
+				alert("Elegiste Papel  🧻🧻🧻")
+			} else if (jugador == 3) {
+				alert("Elegiste Tijera  ✂️✂️✂️")
+			} else {
+				alert("Elegiste PERDER")
+			}
+			//eleije pc
+			if(pc == 1) {
+				alert("PC Elige  🪨🪨🪨")
+			}else if (pc == 2) {
+				alert("PC Elige Papel  🧻🧻🧻")
+			} else if (pc == 3) {
+				alert("PC Elige Tijera  ✂️✂️✂️")
+			} else {
+				alert("PC Elige PERDER")
+			}
+			//Combate
+			if(pc == jugador) {
+				alert("Empate")
+			} else if(jugador == 1 && pc == 3){
+				alert("Ganaste!!!")
+			} else if(jugador == 2 && pc == 1){
+				alert("GANASTE!!!")
+			} else if(jugador == 3 && pc == 2){
+				alert("GANASTE!!!")
+			} else {
+				alert("PERDISTE")
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Piedar, papel o tijera</h1>
+	</body>
 </html>
