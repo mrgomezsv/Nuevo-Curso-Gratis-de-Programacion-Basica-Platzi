@@ -3,11 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Piedra, papel o tijera</title>
-		<script>
+		<script>//porcion de codigo de JavaScript
+			function aleatorio(min, max) {
+				return Math.floor(Math.random() * (max - min + 1) + min)
+			}
+			
 			// 1 es piedra, 2 es tijera, 3 es tijera
 			let jugador = 0
-			let pc = 2
+			let pc = aleatorio(1,3)
+
 			jugador = prompt("Elije: 1 para piedra, 2 para papel, 3 para tijera: ")
+			
 			//alert("Elegiste " + jugador)
 			if(jugador == 1) {
 				alert("Elegiste Piedra  🪨🪨🪨")
